@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31515.178
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AndroidSpecificFeatures.Android", "AndroidSpecificFeatures\AndroidSpecificFeatures.Android\AndroidSpecificFeatures.Android.csproj", "{110BD523-0619-45EE-9E8B-A77A7625CC7D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AndroidSpecificFeatures", "AndroidSpecificFeatures\AndroidSpecificFeatures\AndroidSpecificFeatures.csproj", "{7085A60A-02C2-4013-81CA-19AA4A7FE125}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{110BD523-0619-45EE-9E8B-A77A7625CC7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{110BD523-0619-45EE-9E8B-A77A7625CC7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{110BD523-0619-45EE-9E8B-A77A7625CC7D}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{110BD523-0619-45EE-9E8B-A77A7625CC7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{110BD523-0619-45EE-9E8B-A77A7625CC7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{110BD523-0619-45EE-9E8B-A77A7625CC7D}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{7085A60A-02C2-4013-81CA-19AA4A7FE125}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7085A60A-02C2-4013-81CA-19AA4A7FE125}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7085A60A-02C2-4013-81CA-19AA4A7FE125}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{7085A60A-02C2-4013-81CA-19AA4A7FE125}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7085A60A-02C2-4013-81CA-19AA4A7FE125}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7085A60A-02C2-4013-81CA-19AA4A7FE125}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8FF113BE-E120-465F-A842-022B1F101F26}
+	EndGlobalSection
+EndGlobal

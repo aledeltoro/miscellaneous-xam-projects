@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AndroidSpecificFeatures.Views.FastScrollPage"
+             xmlns:viewModels="clr-namespace:AndroidSpecificFeatures.ViewModels"
+             xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core">
+
+    <ContentPage.BindingContext>
+        <viewModels:FastScrollViewModel/>
+    </ContentPage.BindingContext>
+    <Grid
+        RowDefinitions="Auto, Auto"
+        HorizontalOptions="CenterAndExpand">
+
+        <Button
+            Grid.Row="0"
+            Text="Toggle fast scrolling"
+            Command="{Binding ToggleFastScrollCommand}"
+            BackgroundColor="{Binding ActivationColor}"/>
+
+        <ListView
+            Grid.Row="1"    
+            ItemsSource="{Binding ContactList}"
+            android:ListView.IsFastScrollEnabled="{Binding IsFastScrollActive}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid
+                        ColumnDefinitions="Auto, Auto"
+                        Padding="10">
+
+                            <Label Grid.Column="0" Text="{Binding Name}" FontSize="Large"/>
+                            <Label Grid.Column="1" Text="{Binding LastName}" FontSize="Large"/>
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </Grid>
+</ContentPage>
