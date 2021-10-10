@@ -15,6 +15,7 @@
         <Button
             Grid.Row="0"
             Text="Toggle fast scrolling"
+            TextColor="White"
             Command="{Binding ToggleFastScrollCommand}"
             BackgroundColor="{Binding ActivationColor}"/>
 
